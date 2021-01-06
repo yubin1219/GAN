@@ -16,6 +16,7 @@ GAN의 목적함수는 다음과 같다. D의 입장에서는 실제 데이터(x
 
 이처럼 D학습과 G학습을 번갈아 하면서 서로에게 Insight를 제공하는 형태로 학습한다.
 
+--------------
 
 ![캡처4](https://user-images.githubusercontent.com/74402562/103651704-5b022f00-4fa5-11eb-9e66-91a71cf1060a.PNG)
 
