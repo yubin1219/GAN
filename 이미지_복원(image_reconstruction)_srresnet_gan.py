@@ -112,7 +112,7 @@ class Discriminator(Model):
 
 """# Dataset(Caltech101)"""
 
-dataset = tfds.load(name='cifar10', split='train')
+dataset = tfds.load(name='caltech101', split='train')
 dataset = dataset.map(lambda x: (tf.image.resize(tf.cast(x['image'], tf.float32), (8, 8), tf.image.ResizeMethod.BICUBIC) / 255.0,
                                  tf.image.resize(tf.cast(x['image'], tf.float32), (32, 32), tf.image.ResizeMethod.BICUBIC) / 255.0)).batch(1)
 
