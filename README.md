@@ -4,6 +4,7 @@
 - SRGAN : https://arxiv.org/pdf/1609.04802.pdf
 - ProGAN : https://arxiv.org/pdf/1710.10196.pdf
 - StyleGAN : https://arxiv.org/pdf/1812.04948.pdf
+- StyleGAN2 : https://arxiv.org/pdf/1912.04958.pdf
 - CycleGAN : https://arxiv.org/pdf/1703.10593.pdf
 - pix2pix : https://arxiv.org/pdf/1611.07004.pdf
 -------------------------------------------------
