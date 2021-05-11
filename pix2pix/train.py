@@ -53,7 +53,7 @@ class train:
         pred_fake = self.net_D(fake)
         loss_G_gan = self.loss_gan(pred_fake, torch.ones_like(pred_fake))
         loss_G_L1 = self.loss_L1(output, GT)
-        loss_G = loss_G_gan + loss_G_L1
+        loss_G = loss_G_gan + loss_G_L1 * 100
         loss_G.backward()
         self.optim_G.step()
         
