@@ -31,7 +31,7 @@ class train:
         loss_G_B_gan = self.loss_gan(self.net_D_B(fake_A), torch.ones_like(fake_A))
         loss_G_A_L1 = self.loss_L1(rec_A, real_A)
         loss_G_B_L1 = self.loss_L1(rec_B, real_B)
-        loss_G = loss_G_A_gan + loss_G_A_L1 + loss_G_B_gan + loss_G_B_L1
+        loss_G = loss_G_A_gan + loss_G_A_L1 * 10 + loss_G_B_gan + loss_G_B_L1 * 10
         
         loss_G.backward()
         self.optim_G.step()
