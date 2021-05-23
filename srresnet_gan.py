@@ -16,7 +16,7 @@ from tensorflow.keras import Model
 from tensorflow.keras.layers import Dense, PReLU, LeakyReLU, Layer, Conv2D, BatchNormalization, Flatten
 from tensorflow.keras.applications.vgg16 import VGG16
 import tensorflow_datasets as tfds
-# %matplotlib inline
+%matplotlib inline
 
 """# Residual Block"""
 
